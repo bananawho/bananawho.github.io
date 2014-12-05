@@ -1,0 +1,45 @@
+<html>
+
+  <head>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script language="javascript">
+
+    if(typeof(Storage) !== "undefined") {
+
+      localStorage.setItem("visits", localStorage.getItem("visits") + "v");
+      if(localStorage.getItem("visits").indexOf("vvvv") == -1){
+        //location.replace("https://twitter.com/bhalp1/status/532179493461692416");
+        console.log(localStorage.getItem("visits"))
+      }
+      else{
+        $(document).ready(function(){
+          setTimeout(function(){
+            $("body").fadeIn(800);
+            $("center").animate({"margin-top":"0px"},800)
+          },300)
+        })
+      }
+    }
+    </script>
+    <style>
+      center {
+        margin-top:300px;
+      }
+      h1{
+        font-size:3em;
+      }
+    </style>
+    <!---
+    <meta http-equiv="refresh" content="7; url=https://twitter.com/bhalp1/status/532179493461692416">
+    ---->
+  </head>
+
+  <body style="padding:50px; display:none;">
+    <center>
+      <img height="310" src="http://realfood.tesco.com/media/images/Orange-and-almond-srping-cake-hero-58d07750-0952-47eb-bc41-a1ef9b81c01a-0-472x310.jpg">
+      <h1>Orange you glad I didn't say banana?</h1>
+    </center>
+
+  </body>
+
+</html>
