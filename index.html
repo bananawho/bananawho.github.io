@@ -8,17 +8,14 @@
 
       localStorage.setItem("visits", localStorage.getItem("visits") + "v");
       if(localStorage.getItem("visits").indexOf("vvvv") == -1){
-        //location.replace("https://twitter.com/bhalp1/status/532179493461692416");
-        console.log(localStorage.getItem("visits"))
+        location.replace("https://twitter.com/bhalp1/status/532179493461692416");
       }
-      else{
-        $(document).ready(function(){
-          setTimeout(function(){
-            $("body").fadeIn(800);
-            $("center").animate({"margin-top":"0px"},800)
-          },300)
-        })
-      }
+      $(document).ready(function(){
+        setTimeout(function(){
+          $("body").fadeIn(800);
+          $("center").animate({"margin-top":"0px"},800)
+        },300)
+      })
     }
     </script>
     <style>
